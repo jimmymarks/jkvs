@@ -1,5 +1,4 @@
 +++
-draft = true
 hero_image = ""
 hero_style = "Normal"
 main_image = ""

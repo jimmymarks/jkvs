@@ -6,7 +6,7 @@ fields:
   type: file
   config:
     maxSize: 64
-  label: Main Image
+  label: Main Image/Media File
   description: The first and foremost image on the page.
 - name: page_title
   type: text

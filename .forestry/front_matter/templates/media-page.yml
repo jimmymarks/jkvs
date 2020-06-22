@@ -7,11 +7,21 @@ fields:
   config: {}
   template: image-title-content-for-page-headewr
   label: Main Content
+- name: gallery_title_text
+  type: text
+  config:
+    required: false
+  label: Gallery Title Text
 - name: image_gallery
   type: image_gallery
   config: {}
   label: Image Gallery
   description: Just add as many pictures as you want.
+- name: writing_sample_title
+  type: text
+  config:
+    required: false
+  label: Writing Sample Title
 - name: writing_samples
   type: field_group_list
   fields:

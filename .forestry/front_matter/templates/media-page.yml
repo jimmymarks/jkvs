@@ -41,3 +41,5 @@ fields:
     labelField: sample_title
   label: Writing Samples
   description: Add a title, snippet and URL to the writing sample.
+pages:
+- content/Media.md

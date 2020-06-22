@@ -1,4 +1,117 @@
 ---
 label: Index Page
 hide_body: true
-fields: []
+fields:
+- name: first_pic
+  type: file
+  config:
+    maxSize: 64
+  label: First Pic
+  description: The first picture of you on the site
+- name: welcome_line
+  type: text
+  config:
+    required: false
+  label: Welcome line
+  description: The "Howdy" line, only room for a few characters
+- name: opening_paragraph
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Opening Paragraph
+  description: The opening paragraph by your photo
+- name: 1st_column
+  type: field_group
+  config: {}
+  fields:
+  - name: column_title
+    type: text
+    config:
+      required: false
+    label: Column Title
+  - name: column_image
+    type: file
+    config:
+      maxSize: 64
+    label: Column Image
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Description
+    description: A short description paragraph.
+  - name: goes_to
+    type: text
+    config:
+      required: false
+    label: Goes To
+    description: When clicked, the image and title will take the user to a given page
+      in the site. Put that page's URL here.
+  label: 1st Column
+  description: The first column and content for it<br>
+- name: 2nd_column
+  type: field_group
+  config: {}
+  fields:
+  - name: column_title
+    type: text
+    config:
+      required: false
+    label: Column Title
+  - name: column_image
+    type: file
+    config:
+      maxSize: 64
+    label: Column Image
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Description
+  - name: goes_to
+    type: text
+    config:
+      required: false
+    label: Goes To
+  label: 2nd Column
+- name: 3rd_column
+  type: field_group
+  config: {}
+  fields:
+  - name: column_title
+    type: text
+    config:
+      required: false
+    label: Column Title
+  - name: column_image
+    type: file
+    config:
+      maxSize: 64
+    label: Column Image
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Description
+  - name: goes_to
+    type: text
+    config:
+      required: false
+    label: Goes To
+  label: 3rd Column

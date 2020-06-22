@@ -1,4 +1,43 @@
 ---
 label: Media Page
 hide_body: true
-fields: []
+fields:
+- name: main_content
+  type: include
+  config: {}
+  template: image-title-content-for-page-headewr
+  label: Main Content
+- name: image_gallery
+  type: image_gallery
+  config: {}
+  label: Image Gallery
+  description: Just add as many pictures as you want.
+- name: writing_samples
+  type: field_group_list
+  fields:
+  - name: sample_title
+    type: text
+    config:
+      required: false
+    label: Sample Title
+  - name: small_snippet
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+      max: 140
+    label: Small Snippet
+  - name: sample_url
+    type: text
+    config:
+      required: false
+    label: Sample URL
+  config:
+    min: 
+    max: 
+    labelField: sample_title
+  label: Writing Samples
+  description: Add a title, snippet and URL to the writing sample.

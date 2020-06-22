@@ -19,6 +19,10 @@ sections:
 - type: document
   path: content/Media.md
   label: Media
+- type: document
+  path: content/Podcast.md
+  label: Podcast
+  match: "**/*"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''

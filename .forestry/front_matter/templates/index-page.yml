@@ -2,28 +2,11 @@
 label: Index Page
 hide_body: true
 fields:
-- name: first_pic
-  type: file
-  config:
-    maxSize: 64
-  label: First Pic
-  description: The first picture of you on the site
-- name: welcome_line
-  type: text
-  config:
-    required: false
-  label: Welcome line
-  description: The "Howdy" line, only room for a few characters
-- name: opening_paragraph
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Opening Paragraph
-  description: The opening paragraph by your photo
+- name: main_content
+  type: include
+  config: {}
+  template: image-title-content-for-page-headewr
+  label: Main Content
 - name: 1st_column
   type: field_group
   config: {}

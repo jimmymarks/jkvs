@@ -1,4 +1,28 @@
 ---
-label: Image, Title, Content for Page Headewr
+label: Image, Title, Content for Page Header
 hide_body: true
-fields: []
+fields:
+- name: main_image
+  type: file
+  config:
+    maxSize: 64
+  label: Main Image
+  description: The first and foremost image on the page.
+- name: page_title
+  type: text
+  config:
+    required: false
+  label: Page Title
+  description: 'Whatever you want the title of the page to be, so you can make it
+    different than the URL. '
+- name: main_paragraph
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Main Paragraph
+  description: The main paragraph. Text will appear slightly larger than the other
+    paragraph text on the page.

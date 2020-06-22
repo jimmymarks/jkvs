@@ -20,9 +20,9 @@ fields:
   default: ''
   config:
     required: false
-    wysiwyg: false
+    wysiwyg: true
     schema:
-      format: markdown
+      format: html-blocks
   label: Main Paragraph
   description: The main paragraph. Text will appear slightly larger than the other
     paragraph text on the page.

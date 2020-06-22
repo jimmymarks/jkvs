@@ -1,5 +1,4 @@
 +++
-draft = true
 opening_paragraph = "<p>Hi I'm a guy and <strong>here's the stuff I dooooo</strong>. </p>"
 
 +++

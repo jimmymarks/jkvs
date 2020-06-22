@@ -46,5 +46,8 @@ fields:
   label: Opening Paragraph
   description: This will be the first paragraph on the page and will be slightly larger
     than the other paragraphs
+  showOnly:
+    field: hero_style
+    value: Hero
 pages:
 - content/About.md

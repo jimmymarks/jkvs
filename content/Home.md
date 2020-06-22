@@ -1,5 +1,4 @@
 +++
-draft = true
 main_image = ""
 main_paragraph = "<p>I am here and so are you, let us talk about how that works.</p>"
 page_title = "Hello, Friends! "

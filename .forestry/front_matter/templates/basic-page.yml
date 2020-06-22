@@ -13,3 +13,5 @@ fields:
   label: Opening Paragraph
   description: This will be the first paragraph on the page and will be slightly larger
     than the other paragraphs
+pages:
+- content/About.md

@@ -2,11 +2,39 @@
 label: Basic Page
 hide_body: false
 fields:
+- name: hero_style
+  type: select
+  default: Normal
+  config:
+    required: true
+    options:
+    - Normal
+    - Hero
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Hero Style
+  description: 'If you choose "Hero", you will have a huge image and some text below
+    it; if you choose "Normal," you will get a smaller image with a title and text
+    box. '
 - name: hero_image
   type: file
   config:
     maxSize: 64
   label: Hero Image
+  showOnly:
+    field: hero_style
+    value: Hero
+- name: main_content__non-hero_image_
+  type: include
+  config: {}
+  template: image-title-content-for-page-headewr
+  label: Main Content (Non-Hero Image)
+  showOnly:
+    field: hero_style
+    value: Normal
 - name: opening_paragraph
   type: textarea
   default: ''

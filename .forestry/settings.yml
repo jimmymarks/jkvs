@@ -10,13 +10,15 @@ sections:
   create: all
   match: "*"
 - type: document
+  path: content/Home.md
+  label: Home
+  match: "**/*"
+- type: document
   path: content/About.md
   label: About
-  match: "**/*"
 - type: document
   path: content/Media.md
   label: Media
-  match: "**/*"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''

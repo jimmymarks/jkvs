@@ -27,14 +27,6 @@ fields:
   showOnly:
     field: hero_style
     value: Hero
-- name: main_content__non-hero_image_
-  type: include
-  config: {}
-  template: image-title-content-for-page-headewr
-  label: Main Content (Non-Hero Image)
-  showOnly:
-    field: hero_style
-    value: Normal
 - name: opening_paragraph
   type: textarea
   default: ''
@@ -49,5 +41,13 @@ fields:
   showOnly:
     field: hero_style
     value: Hero
+- name: main_content__non-hero_image_
+  type: include
+  config: {}
+  template: image-title-content-for-page-headewr
+  label: Main Content (Non-Hero Image)
+  showOnly:
+    field: hero_style
+    value: Normal
 pages:
 - content/About.md

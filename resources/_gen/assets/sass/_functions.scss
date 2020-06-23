@@ -1,0 +1,51 @@
+// Breakpoints and Sizes
+
+$small: 720px;
+$medium: 960px;
+$large: 1280px;
+
+// Colors
+
+$jkblue: #004376;
+$jkaqua: #47A8BD;
+$jkgreen: #32936F;
+
+
+// Fonts and Text styles
+
+@mixin bottomwave(){
+     border-bottom: 11px solid red;
+     border-image: url("https://www.jimmymarks.com/externalimgs/wavyyellow.svg");
+     border-image-repeat: repeat;
+}
+
+@mixin debug(){
+    border: 1px solid fuchsia;
+    background-color: rgba(255,0,150,.25);
+};
+
+@mixin flexing($at-small, $at-med) {
+  display: flex;
+  flex-direction: $at-small;
+  @media (min-width: $medium){
+    flex-direction: $at-med;
+  }
+};
+
+.wavygravy{
+  height: 15px;
+  padding: 5px;
+  background: url('https://jimmymarks.com/externalimgs/wavyyellow.svg');
+  background-repeat: repeat-x;
+}
+
+h1, h2, h3 { font-family: 'Montserrat';}
+
+h1{font-size: 48px; color: $jkblue;}
+h2{font-size: 36px; color: $jkgreen;}
+h3{font-size: 24px;}
+
+p, li {font-family: 'Open Sans';}
+a{color: $jkaqua; text-decoration: underline;}
+
+.bumpup{font-size: 1.2rem;}

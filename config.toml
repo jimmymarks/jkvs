@@ -1,3 +1,5 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "J. Keith van Straaten"
+assetDir = "resources/_gen/assets/"
+theme = "JKvS"

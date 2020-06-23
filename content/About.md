@@ -4,9 +4,10 @@ hero_style = "Hero"
 main_image = ""
 main_paragraph = ""
 opening_paragraph = "<p>Hi I'm a guy and <strong>here's the stuff I dooooo</strong>. </p>"
-page_title = ""
+page_title = "Poop"
 
 +++
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue lacus viverra vitae congue. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Egestas purus viverra accumsan in nisl. Quis ipsum suspendisse ultrices gravida dictum fusce. Fermentum iaculis eu non diam phasellus vestibulum lorem sed risus. Nunc mi ipsum faucibus vitae. Cursus in hac habitasse platea dictumst quisque sagittis purus sit. Integer eget aliquet nibh praesent tristique magna. Vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Dui accumsan sit amet nulla. Nunc eget lorem dolor sed viverra ipsum nunc. Ut consequat semper viverra nam libero justo laoreet sit amet. Gravida arcu ac tortor dignissim convallis aenean et. Duis at tellus at urna condimentum mattis pellentesque id nibh.
 
 Tincidunt ornare massa eget egestas purus viverra. Ut placerat orci nulla pellentesque dignissim. Mauris nunc congue nisi vitae suscipit tellus. Amet porttitor eget dolor morbi non arcu risus quis varius. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Pellentesque id nibh tortor id aliquet lectus proin. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Urna porttitor rhoncus dolor purus non enim. Vel pharetra vel turpis nunc eget lorem dolor sed. Urna duis convallis convallis tellus id. Nulla at volutpat diam ut venenatis tellus in metus vulputate. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Pharetra et ultrices neque ornare aenean euismod elementum nisi quis. Ultrices gravida dictum fusce ut placerat. Urna condimentum mattis pellentesque id nibh tortor id aliquet. Sed elementum tempus egestas sed sed risus pretium quam vulputate. Tellus cras adipiscing enim eu turpis egestas. Turpis massa sed elementum tempus egestas sed sed risus pretium. Amet consectetur adipiscing elit ut aliquam purus.

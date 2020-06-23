@@ -2,12 +2,12 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: ''
-webhook_url: 
+webhook_url:
 sections:
 - type: heading
   label: Your Pages
 - type: document
-  path: content/Home.md
+  path: content/_index.md
   label: Home
 - type: document
   path: content/About.md
@@ -21,7 +21,7 @@ sections:
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
-use_front_matter_path: false
+use_front_matter_path: true
 file_template: ":filename:"
 build:
   preview_env:

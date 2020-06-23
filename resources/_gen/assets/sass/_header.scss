@@ -1,0 +1,52 @@
+header {
+
+  @include bottomwave();
+  @include flexing(column, row);
+  padding: 1.25rem;
+  .header {
+    &--logo {
+      flex: .5 1;
+    }
+    &--menu {
+      flex: .5 1;
+      display: flex;
+      align-items: center;
+      @media (min-width: $medium){
+        justify-content: flex-end;
+      }
+      ul{
+        width: 100%;
+        padding: 0;
+        @media (min-width: $medium){
+          width: auto;
+        }
+      }
+      ul>li {
+        display: block;
+        width: 100%;
+        margin: .5rem 0;
+        padding: .5rem 0;
+        text-align: center;
+        @media (min-width: $medium){
+          text-align: left;
+          width: auto;
+          display: inline-block;
+          align-self: space-between;
+          margin: .5rem .25rem;
+        }
+      }
+      a {
+        display: block;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        text-decoration: none;
+        color: $jkblue;
+        cursor: pointer;
+        padding: .5rem;
+        &:hover {
+          background-color: lighten($jkaqua, 35%);
+        }
+      }
+    }
+  }
+}

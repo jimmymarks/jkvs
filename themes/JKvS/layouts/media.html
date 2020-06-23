@@ -1,0 +1,15 @@
+{{ define "title" }}
+  <!-- This will override the default value set in baseof.html; i.e., "{{.Site.Title}}" in the original example-->
+  {{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+  <div class="block block--full">
+    {{ .Title }}
+    <div>
+      <h1>{{ Params.Page_title }}</h1>
+      <p>{{ page.Params.main_paragraph }}</p>
+      {{ .Content }}
+    </div>
+
+  </div>
+{{ end }}

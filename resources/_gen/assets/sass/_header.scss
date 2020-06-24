@@ -1,14 +1,13 @@
 header {
 
-  @include bottomwave();
   @include flexing(column, row);
   padding: 1.25rem;
   .header {
     &--logo {
-      flex: .5 1;
+      flex: .5 1 30%;
     }
     &--menu {
-      flex: .5 1;
+      flex: .5 1 70%;
       display: flex;
       align-items: center;
       @media (min-width: $medium){

@@ -14,10 +14,8 @@ $jkgreen: #32936F;
 // Fonts and Text styles
 
 @mixin bottomwave(){
-     border-bottom: 11px solid red;
-     border-image: url("https://www.jimmymarks.com/externalimgs/wavyyellow.svg");
-     border-image-repeat: repeat;
-}
+    border-image: url('/uploads/wavyyellow.svg') 30 12 / 15 / 45 space;
+};
 
 @mixin debug(){
     border: 1px solid fuchsia;
@@ -35,17 +33,18 @@ $jkgreen: #32936F;
 .wavygravy{
   height: 15px;
   padding: 5px;
+  max-width: 250px;
   background: url('https://jimmymarks.com/externalimgs/wavyyellow.svg');
   background-repeat: repeat-x;
 }
 
 h1, h2, h3 { font-family: 'Montserrat';}
 
-h1{font-size: 48px; color: $jkblue;}
+h1{font-size: 48px; color: $jkblue; margin: .25rem 0;}
 h2{font-size: 36px; color: $jkgreen;}
 h3{font-size: 24px;}
 
 p, li {font-family: 'Open Sans';}
 a{color: $jkaqua; text-decoration: underline;}
 
-.bumpup{font-size: 1.2rem;}
+.bumpup{font-size: 20px;}

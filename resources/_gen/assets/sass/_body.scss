@@ -1,11 +1,11 @@
 body{
   background-color: rgba(255, 255, 255, 1);
   margin: 0;
-  height: 100vh;
   @include flexing(column, column);
   align-items: center;
   justify-content: flex-end;
   @media (min-width: $medium){
+    height: 100vh;
     justify-content: space-between;
   }
 }
@@ -17,9 +17,12 @@ body{
 
   &--footer {
     @include flexing(column, row);
-    align-self: center;
+    // align-self: center;
     width: 100%;
     max-width: 1280px;
+    @media (min-width: $medium){
+      align-self: center;
+    }
   }
   div {
     // @include debug;
@@ -27,43 +30,50 @@ body{
   }
 }
 
-main {
-  .block{
-    flex-wrap: wrap;
+
+.block{
+  @include flexing(row, row);
+  flex-wrap: wrap;
+  @media (min-width: $medium){
+    flex-wrap: nowrap;
+  }
+  margin: 1rem;
+
+  div {
+    padding: .5rem 1rem;
+  }
+
+  &--full{
+    @include flexing(column, column);
+  }
+
+  &--half{
+    div{flex: 1 0 100%;}
     @media (min-width: $medium){
-      flex-wrap: nowrap;
-    }
-    @include flexing(row, row);
-    margin: 1rem;
-    div {
-      padding: .5rem 1rem;
-    }
-    &--full{
-      @include flexing(column, column);
-    }
-    &--half{
-      div{flex: 1 0 100%;}
-      @media (min-width: $medium){
-        div {
-          flex: .5 1;
-        }
-     }
-    }
-    &--thirds{
       div {
-        flex: 33% 1;
+        flex: .5 1;
       }
+   }
+  }
+
+  &--thirds{
+    div {
+      flex: 33% 1;
     }
-    &--quarters {
-      div {
-        flex: 1 0 100%;
-        @media (min-width: $small){
-          flex: .5 1 calc(50% - 40px); ;
-        }
-        @media (min-width:$medium){
-          flex: 25% 1;
-        }
-     }
+  }
+
+  &--quarters {
+    @media (min-width: $medium){
+      flex-wrap: wrap !important;
     }
+    div {
+      flex: 1 0 100%;
+      @media (min-width: $small){
+        flex: .5 1 calc(50% - 40px);
+      }
+      @media (min-width: $medium){
+        flex: .25 1 20%;
+      }
+   }
   }
 }

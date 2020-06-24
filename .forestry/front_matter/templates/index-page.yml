@@ -99,4 +99,4 @@ fields:
     label: Goes To
   label: 3rd Column
 pages:
-- content/Home.md
+- content/_index.md

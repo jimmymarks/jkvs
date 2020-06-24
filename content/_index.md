@@ -10,8 +10,8 @@ description = "You didn't ask for my life story, but here it is, anyway...give i
 goes_to = ""
 [2nd_column]
 column_image = ""
-column_title = ""
-description = ""
+column_title = "See me in action"
+description = "You can check out my reel, my headshots and my writing samples from various publications. "
 goes_to = ""
 [3rd_column]
 column_image = ""

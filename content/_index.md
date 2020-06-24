@@ -7,7 +7,7 @@ type = "index"
 column_image = ""
 column_title = "All About Me"
 description = "You didn't ask for my life story, but here it is, anyway...give it a read! "
-goes_to = ""
+goes_to = "/about"
 [2nd_column]
 column_image = ""
 column_title = "See me in action"

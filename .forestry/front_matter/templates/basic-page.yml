@@ -2,6 +2,15 @@
 label: Basic Page
 hide_body: false
 fields:
+- name: page_title
+  type: text
+  config:
+    required: false
+  label: Page Title
+  description: The title of the page
+  showOnly:
+    field: hero_style
+    value: Hero
 - name: hero_style
   type: select
   default: Normal

@@ -1,6 +1,6 @@
 +++
 hero_image = ""
-hero_style = "Normal"
+hero_style = "Hero"
 main_image = ""
 main_paragraph = "Hello out there"
 opening_paragraph = "<p>J. Keith van Straaten has been called “a local hero” by <em>LA Weekly</em>. He hosted Comedy Central’s TV game show “Beat The Geeks” and the LA landmarks <em>The J. Keith van Straaten Show</em> , <em>What’s My Line? – Live On Stage</em>, and <em>The Fix-Up Show</em>. His TV appearances include slightly-memorable turns on \"Curb Your Enthusiasm,\" “Gilmore Girls,” “Beverly Hills, 90210,” and ads for McDonald’s, Nike, Pizza Hut, Cheez-It, and many more.</p>"

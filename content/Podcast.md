@@ -2,13 +2,17 @@
 hero_image = ""
 hero_style = "Normal"
 main_image = ""
-main_paragraph = "<p>Hey baby</p>"
+main_paragraph = "<p></p>"
 opening_paragraph = ""
 page_title = "Go Fact Yourself"
 
 +++
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue lacus viverra vitae congue. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Egestas purus viverra accumsan in nisl. Quis ipsum suspendisse ultrices gravida dictum fusce. Fermentum iaculis eu non diam phasellus vestibulum lorem sed risus. Nunc mi ipsum faucibus vitae. Cursus in hac habitasse platea dictumst quisque sagittis purus sit. Integer eget aliquet nibh praesent tristique magna. Vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Dui accumsan sit amet nulla. Nunc eget lorem dolor sed viverra ipsum nunc. Ut consequat semper viverra nam libero justo laoreet sit amet. Gravida arcu ac tortor dignissim convallis aenean et. Duis at tellus at urna condimentum mattis pellentesque id nibh.
+What if there were a show where celebrities got to talk about what they wanted to talk about – the topics of their true loves and passions? And what if it was fun and funny, and included trivia questions like you’ve never heard before, and actual experts in a diverse array of fields?
 
-## About this
+If you’re the kind of person who’d like to see this, you can **GO FACT YOURSELF.**
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue lacus viverra vitae congue. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Egestas purus viverra accumsan in nisl. Quis ipsum suspendisse ultrices gravida dictum fusce. Fermentum iaculis eu non diam phasellus vestibulum lorem sed risus. Nunc mi ipsum faucibus vitae. Cursus in hac habitasse platea dictumst quisque sagittis purus sit. Integer eget aliquet nibh praesent tristique magna. Vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Dui accumsan sit amet nulla. Nunc eget lorem dolor sed viverra ipsum nunc. Ut consequat semper viverra nam libero justo laoreet sit amet. Gravida arcu ac tortor dignissim convallis aenean et. Duis at tellus at urna condimentum mattis pellentesque id nibh.
+\[TK button to GFY site\]
+
+## Want J. Keith on your podcast? 
+
+I do guest-appearances! Just reach out via [the Contact page](/contact "Contact Page") and let me know, or hit me up on [Twitter](http://twitter.com/@j_keith "J. Keith on Twitter") or [Facebook](http://www.facebook.com/jkeithdotnet "J. Keith on Facebook"). 

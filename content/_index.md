@@ -12,7 +12,7 @@ goes_to = ""
 column_image = ""
 column_title = "See me in action"
 description = "You can check out my reel, my headshots and my writing samples from various publications. "
-goes_to = ""
+goes_to = "/media"
 [3rd_column]
 column_image = ""
 column_title = ""

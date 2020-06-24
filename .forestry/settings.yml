@@ -23,6 +23,10 @@ sections:
 - type: document
   path: content/Podcast.md
   label: Podcast
+- type: document
+  path: content/Contact.md
+  label: Contact
+  match: "**/*"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''

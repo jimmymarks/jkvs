@@ -60,4 +60,6 @@ fields:
     value: Normal
 pages:
 - content/About.md
+- content/About.md
+- content/Podcast.md
 - content/Podcast.md

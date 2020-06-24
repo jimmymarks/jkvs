@@ -53,3 +53,4 @@ fields:
   description: Add a title, snippet and URL to the writing sample.
 pages:
 - content/Media.md
+- content/Media.md

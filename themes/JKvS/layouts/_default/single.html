@@ -1,8 +1,47 @@
 {{ define "title" }}
   <!-- This will override the default value set in baseof.html; i.e., "{{.Site.Title}}" in the original example-->
-  {{ .Title }} &ndash; {{ .Site.Title }}
+  {{ .File.TranslationBaseName }} &ndash; {{ .Site.Title }}
 {{ end }}
+
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
+{{if eq .Params.hero_style "Hero" }}
+<div class="block block--full">
+  <div>
+    <h1>{{ .Params.page_title }}</h1>
+  </div>
+  {{if .Params.hero_image }}
+    <div>
+      <img src="{{ .Params.hero_image }}">
+    </div>
+  {{end}}
+  <div>
+    {{if .Params.opening_paragraph }}
+      <div class="bumpup">{{ .Params.opening_paragraph | safeHTML }}</div>
+    {{ end }}
+    {{ .Content }}
+  </div>
+</div>
+{{end}}
+
+{{if eq .Params.hero_style "Normal" }}
+
+<div class="block block--half">
+  <div>
+    <img src="http://placehold.it/600x400">
+  </div>
+  <div>
+    <h1>{{ .Params.page_title }}</h1>
+    {{if .Params.main_paragraph }}
+    <div class="bumpup">{{ .Params.main_paragraph | safeHTML }}</div>
+    {{end}}
+  </div>
+</div>
+<div class="block block--full">
+  <div>
+    {{ .Content }}
+  </div>
+</div>
+
 {{ end }}
+
+{{end}}

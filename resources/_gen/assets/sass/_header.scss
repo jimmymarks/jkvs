@@ -1,16 +1,27 @@
 header {
 
   @include flexing(column, row);
-  padding: 1.25rem;
+  padding: .6rem 1.25rem;
   .header {
     &--logo {
+      height: auto;
       flex: .5 1 30%;
+      @include flexing(column, column);
+      align-items: center;
+      justify-content: center;
+      @media (min-width: $medium){
+        align-items: flex-start;
+        justify-content: flex-start;
+        max-height: 125px;
+      }
     }
     &--menu {
+      height: auto;
       flex: .5 1 70%;
       display: flex;
       align-items: center;
       @media (min-width: $medium){
+        max-height: 200px;
         justify-content: flex-end;
       }
       ul{
@@ -26,12 +37,14 @@ header {
         margin: .5rem 0;
         padding: .5rem 0;
         text-align: center;
+        border: 1px solid $jkblue;
         @media (min-width: $medium){
           text-align: left;
           width: auto;
           display: inline-block;
           align-self: space-between;
           margin: .5rem .25rem;
+          border: none;
         }
       }
       a {

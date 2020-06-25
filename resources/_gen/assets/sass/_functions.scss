@@ -9,9 +9,13 @@ $large: 1280px;
 $jkblue: #004376;
 $jkaqua: #47A8BD;
 $jkgreen: #32936F;
+$jkyellow: #E3B505;
+$jkred: #D92A52;
+$jkbrown: #5B4B49;
+$jkdark: #161925;
+$jklight: lighten($jkdark, 79%);
 
-
-// Fonts and Text styles
+// Structural styles
 
 @mixin bottomwave(){
     border-image: url('/uploads/wavyyellow.svg') 30 12 / 15 / 45 space;
@@ -34,17 +38,14 @@ $jkgreen: #32936F;
   height: 15px;
   padding: 5px;
   max-width: 250px;
-  background: url('https://jimmymarks.com/externalimgs/wavyyellow.svg');
+  background: url('/uploads/wavyyellow.svg');
   background-repeat: repeat-x;
 }
-
-h1, h2, h3 { font-family: 'Montserrat';}
-
-h1{font-size: 48px; color: $jkblue; margin: .25rem 0;}
-h2{font-size: 36px; color: $jkgreen;}
-h3{font-size: 24px;}
-
-p, li {font-family: 'Open Sans';}
-a{color: $jkaqua; text-decoration: underline;}
-
-.bumpup{font-size: 20px;}
+.dotdash{
+  height: 11px;
+  margin: 2px 0;
+  padding: 8px 0;
+  width: 100%;
+  background: url('/uploads/dotdash.svg');
+  background-repeat: repeat-x;
+}

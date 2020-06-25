@@ -12,8 +12,16 @@ body{
 
 .container {
   @include flexing(column, column);
-  max-width: 1280px;
   padding: 0 2rem;
+
+  min-width: 90%;
+  max-width: 100%;
+
+  @media (min-width: $medium){
+    min-width: 960px;
+    max-width: 1280px;
+    align-self: center;
+  }
 
   &--footer {
     @include flexing(column, row);
@@ -26,7 +34,7 @@ body{
   }
   div {
     // @include debug;
-    padding: 1rem;
+    @media (min-width: $medium){padding: 1rem;}
   }
 }
 
@@ -34,13 +42,15 @@ body{
 .block{
   @include flexing(row, row);
   flex-wrap: wrap;
+  margin: 0 .5rem 0 .5rem;
   @media (min-width: $medium){
     flex-wrap: nowrap;
+    margin: 0 1rem .5rem 1rem;
   }
-  margin: 1rem;
 
   div {
-    padding: .5rem 1rem;
+    padding: .5rem 0rem;
+    @media (min-width: $medium){padding: .5rem .5rem;}
   }
 
   &--full{

@@ -18,7 +18,11 @@
     {{if .Params.opening_paragraph }}
       <div class="bumpup">{{ .Params.opening_paragraph | safeHTML }}</div>
     {{ end }}
-    {{ .Content }}
+
+      <div>
+      {{ .Content }}
+      </div>
+
   </div>
 </div>
 {{end}}

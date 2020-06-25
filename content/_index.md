@@ -5,7 +5,7 @@ page_title = "Hello, Friends!"
 shorttitle = "Home"
 type = "index"
 [1st_column]
-alt_text_for_image = ""
+alt_text_for_image = "J. Keith reading a restaurant menu"
 column_image = "/8160831_orig.jpg"
 column_title = "All About Me"
 description = "You didn't ask for my life story, but here it is, anyway...give it a read! "

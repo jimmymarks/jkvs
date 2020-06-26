@@ -25,18 +25,15 @@
     </div>
   </div>
   <div class="block block--quarters">
-    <div>
-      <img src="http://placehold.it/200x200">
-    </div>
-    <div>
-      <img src="http://placehold.it/200x200">
-    </div>
-    <div>
-      <img src="http://placehold.it/200x200">
-    </div>
-    <div>
-      <img src="http://placehold.it/200x200">
-    </div>
+
+    {{ range .Params.image_gallery }}
+      <div>
+      {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/" . ) }}
+      {{ $resized := $imageResource.Fill "200x200" }}
+      <img src="{{ $resized.RelPermalink }}" />
+      </div>
+    {{ end }}
+
   </div>
 
   <div class="block block--full">

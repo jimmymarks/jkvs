@@ -41,6 +41,12 @@ $jklight: lighten($jkdark, 79%);
   background: url('/uploads/wavyyellow.svg');
   background-repeat: repeat-x;
 }
+
+.divider{
+  width: 200px;
+  align-self: center;
+}
+
 .dotdash{
   height: 11px;
   margin: 2px 0;

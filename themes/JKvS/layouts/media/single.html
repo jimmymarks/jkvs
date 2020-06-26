@@ -20,6 +20,8 @@
 
   </div>
   <div class="block block--full">
+    <div class="wavygravy divider">
+    </div>
     <div>
       <h2>{{ .Params.gallery_title_text }}</h2>
     </div>
@@ -27,16 +29,18 @@
   <div class="block block--quarters">
 
     {{ range .Params.image_gallery }}
-      <div>
+    <div>
       {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/" . ) }}
       {{ $resized := $imageResource.Fill "200x200" }}
       <img src="{{ $resized.RelPermalink }}" />
-      </div>
+    </div>
     {{ end }}
 
   </div>
 
   <div class="block block--full">
+    <div class="wavygravy divider">
+    </div>
     <div>
       <h2>{{ .Params.writing_sample_title }}</h2>
     </div>

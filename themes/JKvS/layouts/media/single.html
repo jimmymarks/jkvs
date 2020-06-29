@@ -19,24 +19,6 @@
     </div>
 
   </div>
-  <div class="block block--full">
-    <div class="wavygravy divider">
-    </div>
-    <div>
-      <h2>{{ .Params.gallery_title_text }}</h2>
-    </div>
-  </div>
-  <div class="block block--quarters">
-
-    {{ range .Params.image_gallery }}
-    <div>
-      {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/" . ) }}
-      {{ $resized := $imageResource.Fill "200x200" }}
-      <img src="{{ $resized.RelPermalink }}" />
-    </div>
-    {{ end }}
-
-  </div>
 
   <div class="block block--full">
     <div class="wavygravy divider">
@@ -58,4 +40,24 @@
     {{end}}
 
   </div>
+
+  <div class="block block--full">
+    <div class="wavygravy divider">
+    </div>
+    <div>
+      <h2>{{ .Params.gallery_title_text }}</h2>
+    </div>
+  </div>
+  <div class="block block--quarters">
+
+    {{ range .Params.image_gallery }}
+    <div class="image--display">
+      {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/" . ) }}
+      {{ $resized := $imageResource.Resize "x200" }}
+      <img src="{{ $resized.RelPermalink }}" />
+    </div>
+    {{ end }}
+
+  </div>
+
 {{ end }}

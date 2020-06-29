@@ -88,6 +88,12 @@ body{
   }
 }
 
+.image--display{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .media--display{
     @media (max-width: $medium){
       min-height: 340px;

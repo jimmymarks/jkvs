@@ -1,10 +1,10 @@
 {{ define "main" }}
 <div class="block block--half">
 
-  <div>
+  <div class="image--display">
     {{ with .Params.main_image }}
       {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/" . ) }}
-      {{ $resized := $imageResource.Fill "600x400" }}
+      {{ $resized := $imageResource.Fill "600x400 Center q100" }}
       <img src="{{ $resized.RelPermalink }}" />
     {{end}}
   </div>

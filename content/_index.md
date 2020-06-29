@@ -18,7 +18,7 @@ description = "You can check out my reel, my headshots and my writing samples fr
 goes_to = "/media"
 [3rd_column]
 alt_text_for_image = ""
-column_image = "/8160831_orig.jpg"
+column_image = "/_6009330.jpg"
 column_title = "My Podcast"
 description = "I write and host a podcast called Go Fact Yourself. It's a fun trivia show that makes smart people feel dumb...and then smart again. "
 goes_to = "/podcast"

@@ -11,7 +11,7 @@ column_title = "All About Me"
 description = "You didn't ask for my life story, but here it is, anyway...give it a read! "
 goes_to = "/about"
 [2nd_column]
-alt_text_for_image = ""
+alt_text_for_image = "J. Keith hosting a panel discussion"
 column_image = "/8189571_orig.jpg"
 column_title = "See me in action"
 description = "You can check out my reel, my headshots and my writing samples from various publications. "

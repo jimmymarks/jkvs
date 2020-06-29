@@ -17,44 +17,57 @@
 <div class="block block--thirds">
   <!-- 1st column -->
   <div>
-    <h2>{{ $.Param "1st_column.column_title" }}</h2>
+    {{ with $.Param "1st_column" }}
+    <h2>{{ .column_title }}</h2>
 
-    {{- $firstImg := $.Param "1st_column.column_image"  -}}
+    {{- $topImg := .column_image  -}}
 
-      <div>
-        {{ with $firstImg }}
-          {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/" . ) }}
-          {{ $resized := $imageResource.Resize "400x" }}
-          <img src="{{ $resized.RelPermalink }}" />
-        {{end}}
-      </div>
+    <div>
+      {{ with $topImg }}
+        {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/" . ) }}
+        {{ $resized := $imageResource.Resize "400x" }}
+        <img src="{{ $resized.RelPermalink }}" />
+      {{end}}
+    </div>
+    <p>{{ .description }}</p>
 
-    <p>{{ $.Param "1st_column.description" }}</p>
+    {{end}}
   </div>
   <!-- 2nd column -->
   <div>
-    <h2>ghgh</h2>
-    {{- $secondImg := $.Param "2nd_column.column_image"  -}}
+    {{ with $.Param "2nd_column" }}
+    <h2>{{ .column_title }}</h2>
 
-      <div>
-        {{ with $secondImg }}
-          {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/" . ) }}
-          {{ $resized := $imageResource.Resize "400x" }}
-          <img src="{{ $resized.RelPermalink }}" />
-        {{end}}
-      </div>
-    <p>afeafeeafafef</p>
+    {{- $topImg := .column_image  -}}
+
+    <div>
+      {{ with $topImg }}
+        {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/" . ) }}
+        {{ $resized := $imageResource.Resize "400x" }}
+        <img src="{{ $resized.RelPermalink }}" />
+      {{end}}
+    </div>
+    <p>{{ .description }}</p>
+
+    {{end}}
   </div>
   <!-- 3rd Column -->
   <div>
-    <h2>tyjk</h2>
-    {{- $thirdImg := $.Param "3rd_column.column_image"  -}}
-    {{ with $thirdImg }}
-      {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/" . ) }}
-      {{ $resized := $imageResource.Resize "400x" }}
-      <img src="{{ $resized.RelPermalink }}" />
+    {{ with $.Param "3rd_column" }}
+    <h2>{{ .column_title }}</h2>
+
+    {{- $topImg := .column_image  -}}
+
+    <div>
+      {{ with $topImg }}
+        {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/" . ) }}
+        {{ $resized := $imageResource.Resize "400x" }}
+        <img src="{{ $resized.RelPermalink }}" />
+      {{end}}
+    </div>
+    <p>{{ .description }}</p>
+
     {{end}}
-    <p>afeafafevc</p>
   </div>
 </div>
 {{ end }}

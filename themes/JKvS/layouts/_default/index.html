@@ -33,7 +33,7 @@
   </div>
   <!-- 2nd column -->
   <div>
-    <h2>{{ $.Param "2nd_column.column_title" }}</h2>
+    <h2>ghgh</h2>
     {{- $secondImg := $.Param "2nd_column.column_image"  -}}
 
       <div>
@@ -43,20 +43,18 @@
           <img src="{{ $resized.RelPermalink }}" />
         {{end}}
       </div>
-    <p>{{ $.Param "2nd_column.description" }}</p>
+    <p>afeafeeafafef</p>
   </div>
   <!-- 3rd Column -->
   <div>
-    <h2>{{ $.Param "3rd_column.column_title" }}</h2>
+    <h2>tyjk</h2>
     {{- $thirdImg := $.Param "3rd_column.column_image"  -}}
-    <div>
     {{ with $thirdImg }}
       {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/" . ) }}
       {{ $resized := $imageResource.Resize "400x" }}
       <img src="{{ $resized.RelPermalink }}" />
     {{end}}
-    </div>
-    <p>{{ $.Param "3rd_column.description" }}</p>
+    <p>afeafafevc</p>
   </div>
 </div>
 {{ end }}

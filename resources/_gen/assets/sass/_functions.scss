@@ -1,0 +1,57 @@
+// Breakpoints and Sizes
+
+$small: 720px;
+$medium: 960px;
+$large: 1280px;
+
+// Colors
+
+$jkblue: #004376;
+$jkaqua: #47A8BD;
+$jkgreen: #32936F;
+$jkyellow: #E3B505;
+$jkred: #D92A52;
+$jkbrown: #5B4B49;
+$jkdark: #161925;
+$jklight: lighten($jkdark, 79%);
+
+// Structural styles
+
+@mixin bottomwave(){
+    border-image: url('/uploads/wavyyellow.svg') 30 12 / 15 / 45 space;
+};
+
+@mixin debug(){
+    border: 1px solid fuchsia;
+    background-color: rgba(255,0,150,.25);
+};
+
+@mixin flexing($at-small, $at-med) {
+  display: flex;
+  flex-direction: $at-small;
+  @media (min-width: $medium){
+    flex-direction: $at-med;
+  }
+};
+
+.wavygravy{
+  height: 15px;
+  padding: 5px;
+  max-width: 250px;
+  background: url('/uploads/wavyyellow.svg');
+  background-repeat: repeat-x;
+}
+
+.divider{
+  width: 200px;
+  align-self: center;
+}
+
+.dotdash{
+  height: 11px;
+  margin: 2px 0;
+  padding: 8px 0;
+  width: 100%;
+  background: url('/uploads/dotdash.svg');
+  background-repeat: repeat-x;
+}

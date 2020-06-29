@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>J. Keith van Straaten</title>
+    <title>My New Hugo Site</title>
     <link>http://example.org/</link>
-    <description>Recent content on J. Keith van Straaten</description>
+    <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -16,30 +16,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/about/</guid>
-      <description>J. Keith has been seen as the host of &amp;ldquo;Yahoo! Answers On The Street,&amp;rdquo; a talking head on VH1′s &amp;ldquo;Best Week Ever&amp;rdquo; and on E! countdown shows like “Wildest Cop Show Moments” and “Celebrity Feuds.” He&amp;rsquo;s appeared on &amp;ldquo;The Today Show&amp;rdquo; and twice been recommended viewing by People magazine.
-J. Keith wrote sketch and stand-up comedy for several years, performing both at venues around the country. J. Keith’s animation scripts and songs for &amp;ldquo;Casper,&amp;rdquo; &amp;ldquo;Toonsylvania,&amp;rdquo; and &amp;ldquo;Mega-Babies,&amp;rdquo; air around the world (and he has the royalty check for 8 cents from Belgium to prove it).</description>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue lacus viverra vitae congue. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Egestas purus viverra accumsan in nisl. Quis ipsum suspendisse ultrices gravida dictum fusce. Fermentum iaculis eu non diam phasellus vestibulum lorem sed risus. Nunc mi ipsum faucibus vitae. Cursus in hac habitasse platea dictumst quisque sagittis purus sit.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/contact/</link>
+      <link>http://example.org/home/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/contact/</guid>
-      <description>J. Keith on Twitter
-J. Keith on Facebook
-Commercial Talent Agency (hosting/commercial/VO)
-12711 Ventura Blvd., #285
-Studio City, CA 91604
-(818) 505-1431
-Hosting: paul (at) commercialtalentagency.com
-Commercial: blair (at) commercialtalentagency.com
-VO: alicia (at) commercialtalentagency.com
-Synergy Talent (theatrical agent)
-13251 Ventura Blvd. – Suite 2
-Studio City, CA 91604
-(818) 995-6500
-kh(at)synergytalent.net</description>
+      <guid>http://example.org/home/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -57,7 +43,7 @@ kh(at)synergytalent.net</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/podcast/</guid>
-      <description>Want J. Keith on your podcast? I do guest-appearances! Just reach out via the Contact page and let me know, or hit me up on Twitter or Facebook.</description>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue lacus viverra vitae congue. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Egestas purus viverra accumsan in nisl. Quis ipsum suspendisse ultrices gravida dictum fusce. Fermentum iaculis eu non diam phasellus vestibulum lorem sed risus. Nunc mi ipsum faucibus vitae. Cursus in hac habitasse platea dictumst quisque sagittis purus sit.</description>
     </item>
     
   </channel>

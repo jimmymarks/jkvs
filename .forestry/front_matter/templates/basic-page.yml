@@ -58,6 +58,35 @@ fields:
   showOnly:
     field: hero_style
     value: Normal
+- name: call_to_action
+  type: field_group
+  config: {}
+  fields:
+  - name: url
+    type: text
+    config:
+      required: false
+    label: URL
+  - name: new_window_
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: New Window?
+    description: 'Open the link in a new window? '
+  - name: button_text
+    type: text
+    config:
+      required: false
+    label: Button Text
+  label: Call to Action
+  description: The c-to-a button
 pages:
 - content/About.md
 - content/About.md

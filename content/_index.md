@@ -1,6 +1,6 @@
 +++
 main_image = "/homepage_pic@3x.jpg"
-main_paragraph = "<p>I’m J. Keith van Straaten, an actor, comedian, writer and gameshow host living and working in Los Angeles, CA.</p><p class=\"p1\">You might have seen me on Gilmore Girls, Beverly Hills 90210, Best Week Ever, any number of commericals…or maybe you’ve heard me on my hit podcast, Go Fact Yourself!</p><p>If you don’t know me already, get to know me, why don’tcha?</p>"
+main_paragraph = "<p>I’m <strong>J. Keith van Straaten</strong>, a <strong>writer, actor, comedian and gameshow host</strong> living and working in <strong>Los Angeles, CA</strong>.</p><p class=\"p1\">You might have seen me on <em>Gilmore Girls, Beverly Hills 90210, Best Week Ever,</em> any number of commericals…or maybe you’ve heard me on my hit podcast, <strong><em>Go Fact Yourself!</em></strong></p><p>If you don’t know me already, get to know me, why don’tcha?</p>"
 page_title = "Hello, Friends!"
 shorttitle = "Home"
 type = "index"

@@ -1,7 +1,5 @@
 <a class="button" href="{{ $.Param "call_to_action.url" }}"
-{{if eq .Params.call_to_action.new_window_ "true"}}
-target="_blank"
-{{end}}
->
+{{if eq .Params.call_to_action.new_window_ "Yes"}}
+target="_blank" {{end}} >
   {{ $.Param "call_to_action.button_text" }}
 </a>

@@ -16,7 +16,9 @@
     <div>
       <h2>My demo reel</h2>
       <div class="bumpup">{{ .Params.main_paragraph | safeHTML }}</div>
-      <a class="button" href="/contact">Book me for your show!</a>
+          {{ if $.Param "call_to_action" }}
+            {{- partial "ctoabutton.html" . -}}
+          {{ end }}
     </div>
 
   </div>

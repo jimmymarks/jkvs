@@ -7,6 +7,37 @@ fields:
   config: {}
   template: image-title-content-for-page-headewr
   label: Main Content
+- name: call_to_action
+  type: field_group
+  config: {}
+  fields:
+  - name: url
+    type: text
+    config:
+      required: false
+    label: URL
+  - name: new_window_
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - 'Yes'
+      - 'No'
+      source:
+        type: simple
+        section:
+        file:
+        path:
+    label: New Window?
+    description: 'Open the link in a new window? '
+  - name: button_text
+    type: text
+    config:
+      required: false
+    label: Button Text
+  label: Call to Action
+  description: The c-to-a button
 - name: gallery_title_text
   type: text
   config:
@@ -46,8 +77,8 @@ fields:
       required: false
     label: Sample URL
   config:
-    min: 
-    max: 
+    min:
+    max:
     labelField: sample_title
   label: Writing Samples
   description: Add a title, snippet and URL to the writing sample.

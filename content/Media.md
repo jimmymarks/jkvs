@@ -5,6 +5,10 @@ main_image = ""
 main_paragraph = "<p>I've hosted game shows, acted, done panel, and been in commercials. You lookin' for a guy who can hit his mark and remember his lines? Well, look no further.</p>"
 page_title = "Media Samples"
 type = "media"
+[call_to_action]
+button_text = "Book me for your show!"
+new_window_ = "No"
+url = "/contact"
 writing_sample_title = "My writing samples"
 [[writing_samples]]
 sample_title = "My articles on The Points Guy"

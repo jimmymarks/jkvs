@@ -1,13 +1,16 @@
 +++
-hero_image = ""
+hero_image = "/ep-3_fun-wth-guests.jpeg"
 hero_style = "Hero"
 main_image = ""
 main_paragraph = "<p>I'd be more than happy to talk to you about your project, as a writer, actor, collaborator...you name it. Get in touch:</p>"
 opening_paragraph = "<p>I'd be more than happy to talk to you about your project, as a writer, actor, collaborator...you name it. Get in touch:</p>"
 page_title = "Contact J. Keith"
+[call_to_action]
+button_text = ""
+new_window_ = ""
+url = ""
 
 +++
-
 [J. Keith on Twitter](http://twitter.com/@j_keith "J. Keith on Twitter")
 
 [J. Keith on Facebook](http://www.facebook.com/jkeithdotnet "J. Keith on Facebook")

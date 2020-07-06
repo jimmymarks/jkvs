@@ -2,11 +2,13 @@
 <div class="block block--half">
 
   <div class="image--display">
+    <div>
     {{ with .Params.main_image }}
-      {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/" . ) }}
-      {{ $resized := $imageResource.Fill "600x400 Center q100" }}
+      {{ $imageResource := ($.Site.GetPage "/uploads").Resources.GetMatch (strings.TrimPrefix "/" . ) }}
+      {{ $resized := $imageResource.Fill "600x500 Center q100" }}
       <img src="{{ $resized.RelPermalink }}" />
     {{end}}
+    </div>
   </div>
   <div>
     <h1>{{ .Params.page_title }}</h1>
@@ -17,56 +19,20 @@
 <div class="block block--thirds">
   <!-- 1st column -->
   <div>
-    {{ with $.Param "1st_column" }}
-    <h2>{{ .column_title }}</h2>
-
-    {{- $topImg := .column_image  -}}
-
-    <div>
-      {{ with $topImg }}
-        {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/" . ) }}
-        {{ $resized := $imageResource.Resize "400x" }}
-        <img src="{{ $resized.RelPermalink }}" />
-      {{end}}
-    </div>
-    <p>{{ .description }}</p>
-
-    {{end}}
+    {{with $.Param "1st_column" }}
+      {{ partial "homecolumns.html" . }}
+    {{ end }}
   </div>
   <!-- 2nd column -->
   <div>
     {{ with $.Param "2nd_column" }}
-    <h2>{{ .column_title }}</h2>
-
-    {{- $topImg := .column_image  -}}
-
-    <div>
-      {{ with $topImg }}
-        {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/" . ) }}
-        {{ $resized := $imageResource.Resize "400x" }}
-        <img src="{{ $resized.RelPermalink }}" />
-      {{end}}
-    </div>
-    <p>{{ .description }}</p>
-
+      {{ partialCached "homecolumns.html" . }}
     {{end}}
   </div>
   <!-- 3rd Column -->
   <div>
     {{ with $.Param "3rd_column" }}
-    <h2>{{ .column_title }}</h2>
-
-    {{- $topImg := .column_image  -}}
-
-    <div>
-      {{ with $topImg }}
-        {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/" . ) }}
-        {{ $resized := $imageResource.Resize "400x" }}
-        <img src="{{ $resized.RelPermalink }}" />
-      {{end}}
-    </div>
-    <p>{{ .description }}</p>
-
+      {{ partial "homecolumns.html" . }}
     {{end}}
   </div>
 </div>

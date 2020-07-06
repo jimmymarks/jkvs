@@ -16,6 +16,7 @@
     <div>
       <h2>My demo reel</h2>
       <div class="bumpup">{{ .Params.main_paragraph | safeHTML }}</div>
+      <a class="button" href="/contact">Book me for your show!</a>
     </div>
 
   </div>
@@ -46,6 +47,7 @@
     </div>
     <div>
       <h2>{{ .Params.gallery_title_text }}</h2>
+      <p><em>Click on any image in the gallery to be taken to a download-able, full-sized copy of the image. For a larger selection of images, <a href="/headshots">go to the Headshots page.</a></em></p>
     </div>
   </div>
   <div class="block block--quarters">
@@ -53,11 +55,12 @@
     {{ range .Params.image_gallery }}
     <div class="image--display">
       {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/" . ) }}
-      {{ $resized := $imageResource.Resize "x200" }}
-      <img src="{{ $resized.RelPermalink }}" />
+      {{ $resized := $imageResource.Resize "x300" }}
+      <a href="{{ $imageResource.RelPermalink }}" target="_blank"><img src="{{ $resized.RelPermalink }}" /></a>
     </div>
     {{ end }}
 
   </div>
+
 
 {{ end }}

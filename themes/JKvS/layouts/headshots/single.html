@@ -1,0 +1,28 @@
+{{ define "title" }}
+  <!-- This will override the default value set in baseof.html; i.e., "{{.Site.Title}}" in the original example-->
+  {{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+
+  <div class="block block--full">
+    <div>
+      <h1>{{ .Params.page_title }}</h1>
+      <p><em>Click on any image in the gallery to be taken to a download-able, full-sized copy of the image.</em></p>
+    </div>
+  </div>
+
+  <div class="block block--quarters">
+
+    {{ range .Params.image_gallery }}
+
+    <div class="image--display">
+      {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/" . ) }}
+      {{ $resized := $imageResource.Resize "x300" }}
+      <a href="{{ $imageResource.RelPermalink }}" target="_blank"><img src="{{ $resized.RelPermalink }}" /></a>
+    </div>
+    {{ end }}
+
+  </div>
+
+{{ end }}

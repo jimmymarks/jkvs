@@ -1,0 +1,9 @@
+<h2>{{ .column_title }}</h2>
+
+<div class="image--display responsive--image">
+  {{ if .column_image }}
+    <a href="{{.goes_to}}"><img src="/uploads{{ .column_image }}"/></a>
+  {{end}}
+</div>
+
+<p>{{ .description }}<a href="{{.goes_to}}">Learn More</a></p>

@@ -1,0 +1,22 @@
+---
+label: Headshots Page
+hide_body: true
+fields:
+- name: main_content
+  type: include
+  config: {}
+  template: image-title-content-for-page-headewr
+  label: Main Content
+- name: gallery_title_text
+  type: text
+  config:
+    required: false
+  label: Gallery Title Text
+- name: image_gallery
+  type: image_gallery
+  config: {}
+  label: Image Gallery
+  description: Just add as many pictures as you want.
+pages:
+- content/Headshots.md
+- content/Headshots.md

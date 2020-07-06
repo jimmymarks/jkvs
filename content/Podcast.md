@@ -7,7 +7,7 @@ opening_paragraph = ""
 page_title = "Go Fact Yourself"
 [call_to_action]
 button_text = "Check out Go Fact Yourself"
-new_window_ = ""
+new_window_ = "true"
 url = "https://gofactyourpod.com"
 
 +++

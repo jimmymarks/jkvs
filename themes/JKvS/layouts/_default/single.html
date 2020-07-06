@@ -16,7 +16,14 @@
   {{end}}
   <div>
     {{if .Params.opening_paragraph }}
-      <div class="bumpup">{{ .Params.opening_paragraph | safeHTML }}</div>
+      <div class="bumpup">
+        {{ .Params.opening_paragraph | safeHTML }}
+      </div>
+    {{ end }}
+
+
+    {{ if $.Param "call_to_action" }}
+      {{- partial "ctoabutton.html" . -}}
     {{ end }}
 
       <div>
@@ -40,7 +47,13 @@
   <div>
     <h1>{{ .Params.page_title }}</h1>
     {{if .Params.main_paragraph }}
-    <div class="bumpup">{{ .Params.main_paragraph | safeHTML }}</div>
+    <div class="bumpup">{{ .Params.main_paragraph | safeHTML }}
+
+      {{ if $.Param "call_to_action" }}
+        {{- partial "ctoabutton.html" . -}}
+      {{ end }}
+
+    </div>
     {{end}}
   </div>
 </div>

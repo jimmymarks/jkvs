@@ -9,9 +9,11 @@
   <div>
     <h1>{{ .Params.page_title }}</h1>
   </div>
-  {{if .Params.hero_image }}
-    <div>
-      <img src="{{ .Params.hero_image }}">
+  {{ with .Params.hero_image }}
+    {{ $imageResource := ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/" . ) }}
+    {{ $resized := $imageResource.Fill "1280x400 Center" }}
+    <div class="responsive--image">
+      <img src="{{ $resized.RelPermalink }}" />
     </div>
   {{end}}
   <div>
@@ -22,7 +24,7 @@
     {{ end }}
 
 
-    {{ if $.Param "call_to_action" }}
+    {{ with $.Param "call_to_action" }}
       {{- partial "ctoabutton.html" . -}}
     {{ end }}
 

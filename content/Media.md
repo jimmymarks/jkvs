@@ -5,10 +5,6 @@ main_image = ""
 main_paragraph = "<p>I've hosted game shows, acted, done panel, and been in commercials. You lookin' for a guy who can hit his mark and remember his lines? Well, look no further.</p>"
 page_title = "Media Samples"
 type = "media"
-[call_to_action]
-button_text = "Book me for your show!"
-new_window_ = "No"
-url = "/contact"
 writing_sample_title = "My writing samples"
 [[writing_samples]]
 sample_title = "My articles on The Points Guy"
@@ -22,5 +18,9 @@ small_snippet = "Including \"The Best and Worst Video Game Movies of the ’80s\
 sample_title = "Episodes of Ask Me Another I wrote"
 sample_url = "https://www.npr.org/podcasts/510299/ask-me-another"
 small_snippet = "Including \"Michael McDonald: Once A Doobie, Always A Doobie\""
+[call_to_action]
+button_text = "Book me for your show!"
+new_window_ = "No"
+url = "/contact"
 
 +++

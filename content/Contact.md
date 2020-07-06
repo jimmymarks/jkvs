@@ -32,5 +32,3 @@ Studio City, CA 91604
 (818) 995-6500
 
 kh(at)synergytalent.net
-
-Foo

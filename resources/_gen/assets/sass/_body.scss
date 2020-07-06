@@ -26,7 +26,7 @@ body{
   &--footer {
     @include flexing(column, row);
     // align-self: center;
-    width: 100%;
+    // width: 100%;
     max-width: 1280px;
     @media (min-width: $medium){
       align-self: center;
